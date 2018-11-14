@@ -1,18 +1,6 @@
+<div  id="page_wrapper" >
 <h1>New Post</h1>
 
-<%= form_for :posts, url: posts_path do |f| %>
-<p>
-  <%= f.label :title %> </br>
-  <%= f.text_field :title %>
-</p>
+<%= render 'form' %>
 
-<p>
-  <%= f.label :body %> </br>
-  <%= f.text_area :body %>
-</p>
-
-<p>
-  <%= f.submit %> </br>
-</p>
-
-<% end %>
+</div>
